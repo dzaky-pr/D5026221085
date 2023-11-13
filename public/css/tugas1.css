@@ -1,0 +1,314 @@
+/* CSS Reset by https://meyerweb.com/eric/tools/css/reset/ */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* My code is below */
+
+html {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+html > * {
+    letter-spacing: 0.6px;
+}
+
+body {
+    background-color: #ffb700;
+}
+
+h1 {
+    font-weight: 600;
+    margin: 0;
+    font-size: 20px;
+}
+
+div h1 {
+    margin-top: 20px;
+}
+
+div h2 {
+    margin-top: 14px;
+}
+
+div h3 {
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+p {
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+    color: #ffffff;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.dpr-navbar-container {
+    max-width: calc(788px);
+    margin: 28px 26.5% 0px 73.5%;
+}
+
+.dpr-button-navbar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(240 240 240);
+    cursor: pointer;
+    border: 1px solid rgb(226 226 226);
+}
+
+.dpr-button-container {
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    position: relative;
+    font: inherit;
+}
+
+.dpr-button {
+    z-index: 0;
+    overflow: hidden;
+    margin-bottom: 16px;
+    border: 2px solid rgb(50, 5, 0);
+    transition: none 0s ease 0s;
+    box-shadow: rgb(50, 5, 0) 8px 8px 0px 0px;
+    color: rgb(50, 5, 0);
+    background-color: rgb(255, 255, 255);
+    width: calc(100% - 16px);
+    border-radius: 8px;
+    position: relative;
+    height: auto;
+}
+
+.dpr-button:hover {
+    transform: translate(4px, 4px);
+    box-shadow: rgb(50, 5, 0) 4px 4px 0px 0px;
+}
+
+.dpr-button-inner {
+    transition: 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s,
+        border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s,
+        transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s,
+        background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+}
+
+.dpr-picture {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: contain;
+    display: block;
+}
+
+.dpr-container {
+    margin: 0px auto;
+    height: 100%;
+    width: 100%;
+    max-width: 680px;
+    padding: 64px 16px 32px;
+}
+
+.dpr-picture-container {
+    display: inline;
+    position: absolute;
+    height: 56px;
+}
+
+.dpr-small-picture {
+    width: 46px;
+    height: 46px;
+    padding: 4px 4px 3px 4px;
+    border-radius: 8px;
+}
+
+.dpr-button-text {
+    display: inline-block;
+    padding: 19.5px 0px;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+
+.dpr-main {
+    display: inline;
+    text-align: center;
+}
+
+.dpr-image-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 96px;
+}
+
+.dpr-main-desc {
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-top: 4px;
+}
+
+.dpr-content {
+    margin-top: 32px;
+}
+
+.dpr-footer {
+    display: block;
+    margin-top: 47px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+.dpr-footer-inner {
+    height: 20px;
+    padding-left: 123px;
+}
+
+.dpr-cookie-font p {
+    font-size: 9px;
+    padding-left: 18px;
+    padding-bottom: 18px;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+}
