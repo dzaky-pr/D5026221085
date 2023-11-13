@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DosenController;
+use App\Http\Controllers\BlogController;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,6 +56,16 @@ Route::get('/tugas-kelompok-bs-btn', function () {
 Route::get('perkalian', [DosenController::class, 'index']);
 
 Route::get('show', [DosenController::class, 'showBlog']);
+
+Route::get('/pegawai/{nama}', [DosenController::class, 'showNama']);
+
+Route::get('/formulir', [DosenController::class,'formulir']);
+Route::post('/formulir/proses', [DosenController::class,'proses']);
+
+// route blog
+Route::get('/blog', [BlogController::class, 'home']);
+Route::get('/blog/tentang', [BlogController::class,'tentang']);
+Route::get('/blog/kontak', [BlogController::class,'kontak']);
 
 // ('nama', 'nama_controler@nama_function)
 
