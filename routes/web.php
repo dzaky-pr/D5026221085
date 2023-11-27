@@ -58,7 +58,7 @@ Route::get('perkalian', [DosenController::class, 'index']);
 
 Route::get('show', [DosenController::class, 'showBlog']);
 
-Route::get('/pegawai/custom/{nama}', [DosenController::class, 'showNama']);
+Route::get('/pegawai/custom-nama/{nama}', [DosenController::class, 'showNama']);
 
 Route::get('/formulir', [DosenController::class,'formulir']);
 Route::post('/formulir/proses', [DosenController::class,'proses']);
@@ -82,3 +82,6 @@ Route::post('/pegawai/update',[PegawaiController::class,'update']);
 
 // pegawai hapus
 Route::get('/pegawai/hapus/{id}',[PegawaiController::class,'hapus']);
+
+// cari pegawai
+Route::get('/pegawai/cari',[PegawaiController::class,'cari']);
