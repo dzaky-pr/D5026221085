@@ -85,3 +85,6 @@ Route::get('/pegawai/hapus/{id}',[PegawaiController::class,'hapus']);
 
 // cari pegawai
 Route::get('/pegawai/cari',[PegawaiController::class,'cari']);
+
+// view pegawai
+Route::get('/pegawai/view/{id}',[PegawaiController::class,'view']);
