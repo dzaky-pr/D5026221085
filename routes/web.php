@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DosenController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\LatihanEasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -88,3 +89,11 @@ Route::get('/pegawai/cari',[PegawaiController::class,'cari']);
 
 // view pegawai
 Route::get('/pegawai/view/{id}',[PegawaiController::class,'view']);
+
+//route CRUD NilaiKuliah
+// halaman utama database nilaikuliah
+Route::get('/nilaikuliah', [LatihanEasController::class,'index']);
+
+// tambah utama database nilaikuliah
+Route::post('/nilaikuliah/store',[LatihanEasController::class,'store']);
+Route::get('/nilaikuliah/tambah', [LatihanEasController::class,'tambah']);
