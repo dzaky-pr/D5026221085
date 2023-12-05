@@ -5,6 +5,7 @@ use App\Http\Controllers\DosenController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\LatihanEasController;
+use App\Http\Controllers\BukuController;
 
 /*
 |--------------------------------------------------------------------------
@@ -97,3 +98,24 @@ Route::get('/nilaikuliah', [LatihanEasController::class,'index']);
 // tambah utama database nilaikuliah
 Route::post('/nilaikuliah/store',[LatihanEasController::class,'store']);
 Route::get('/nilaikuliah/tambah', [LatihanEasController::class,'tambah']);
+
+// route CRUD Database Buku
+// halaman utama database buku
+Route::get('/database-buku', [BukuController::class,'index']);
+
+// tambah utama database buku
+Route::post('/database-buku/store',[BukuController::class,'store']);
+Route::get('/database-buku/tambah', [BukuController::class,'tambah']);
+
+// edit data buku
+Route::get('/database-buku/edit/{id}',[BukuController::class,'edit']);
+Route::post('/database-buku/update',[BukuController::class,'update']);
+
+// hapus data buku
+Route::get('/database-buku/hapus/{id}',[BukuController::class,'hapus']);
+
+// view pegawai
+Route::get('/database-buku/view/{id}',[BukuController::class,'view']);
+
+// cari buku
+Route::get('/database-buku/cari',[BukuController::class,'cari']);
