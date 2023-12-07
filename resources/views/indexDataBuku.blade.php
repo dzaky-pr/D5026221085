@@ -1,5 +1,5 @@
 @extends('master2')
-@section('title', 'Database Pegawai')
+@section('title', 'Database Buku')
 
     @section('judul_halaman')
 

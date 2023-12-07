@@ -6,6 +6,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\LatihanEasController;
 use App\Http\Controllers\BukuController;
+use App\Http\Controllers\NadaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -119,3 +120,17 @@ Route::get('/database-buku/view/{id}',[BukuController::class,'view']);
 
 // cari buku
 Route::get('/database-buku/cari',[BukuController::class,'cari']);
+
+// BELAJAR ELOQUENT
+Route::get('/database-baju',[NadaController::class,'index']);
+
+// Tambah data baju
+Route::get('/database-baju/tambah',[NadaController::class,'tambah']);
+Route::post('/database-baju/store',[NadaController::class,'store']);
+
+Route::get('/database-baju/edit/{id}',[NadaController::class,'edit']);
+Route::post('/database-baju/update',[NadaController::class,'update']);
+
+Route::get('/database-baju/hapus/{id}',[NadaController::class,'hapus']);
+
+Route::get('/database-baju/cari',[NadaController::class,'cari']);
