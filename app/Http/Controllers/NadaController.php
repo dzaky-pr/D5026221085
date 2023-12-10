@@ -46,8 +46,7 @@ class NadaController extends Controller
 
         }
 
-        public function update(Request $request)
-        {
+    public function update(Request $request){
         $baju = Baju::find($request->kodebaju);
         $baju->merkbaju= $request->merkbaju;
         $baju->stockbaju= $request->stockbaju;
@@ -76,5 +75,15 @@ class NadaController extends Controller
 
     return view('belajar', ['baju' => $baju]);
     }
+
+    public function view($id) {
+        // mengambil data pegawai berdasarkan id yang dipilih
+    	$baju = Baju::find($id);
+    	// passing data pegawai yang didapat ke view edit.blade.php
+    	return view('viewbelajar',['baju' => $baju]);
+
+        }
+
+
 
 }

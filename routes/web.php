@@ -134,3 +134,13 @@ Route::post('/database-baju/update',[NadaController::class,'update']);
 Route::get('/database-baju/hapus/{id}',[NadaController::class,'hapus']);
 
 Route::get('/database-baju/cari',[NadaController::class,'cari']);
+
+Route::get('/database-baju/view/{id}',[NadaController::class,'view']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -46,6 +46,7 @@
 						<td>{{ $b->stockbaju }}</td>
 						<td>{{ $b->tersedia }}</td>
 						<td>
+                            <a class="btn btn-primary btn-sm" href="/database-baju/view/{{ $b->kodebaju }}">View</a>
 							<a class="btn btn-warning btn-sm" href="/database-baju/edit/{{ $b->kodebaju }}">Edit</a>
 							<a class="btn btn-danger btn-sm" href="/database-baju/hapus/{{ $b->kodebaju }}">Hapus</a>
 						</td>
