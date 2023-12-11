@@ -49,9 +49,6 @@
 
             <td>{{ angkaToHuruf($n->NilaiAngka) }}</td>
             <td>{{$n->NilaiAngka * $n->SKS }}</td>
-			{{-- <td class="d-flex">
-                <a href="/nilaikuliah/view/{{ $p->nilaikuliah_id }}"  class="btn btn-success m-1">View</a>
-			</td> --}}
 		</tr>
 		@endforeach
 	</table>

@@ -46,5 +46,8 @@
 		@endforeach
 	</table>
     {{$buku -> links()}}
+    Halaman : {{ $buku->currentPage() }} <br/>
+	Jumlah Data : {{ $buku->total() }} <br/>
+	Data Per Halaman : {{ $buku->perPage() }} <br/>
 
     @endsection

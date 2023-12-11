@@ -7,6 +7,7 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\LatihanEasController;
 use App\Http\Controllers\BukuController;
 use App\Http\Controllers\NadaController;
+use App\Http\Controllers\EmojiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -144,3 +145,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::get('/chat',[EmojiController::class,'index']);

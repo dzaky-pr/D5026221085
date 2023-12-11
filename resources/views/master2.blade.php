@@ -34,6 +34,7 @@
                         <a class="dropdown-item" href="/pegawai">Pegawai</a>
                         <a class="dropdown-item" href="/nilaikuliah">Nilai Kuliah</a>
                         <a class="dropdown-item" href="/database-buku">Buku</a>
+                        <a class="dropdown-item" href="/chat">CHAT</a>
                     </div>
                 </li>
             </ul>

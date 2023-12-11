@@ -51,5 +51,8 @@
 		@endforeach
 	</table>
     {{$pegawai -> links()}}
+    Halaman : {{ $pegawai->currentPage() }} <br/>
+	Jumlah Data : {{ $pegawai->total() }} <br/>
+	Data Per Halaman : {{ $pegawai->perPage() }} <br/>
 
     @endsection
