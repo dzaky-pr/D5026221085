@@ -6,6 +6,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\LatihanEasController;
 use App\Http\Controllers\BukuController;
+use App\Http\Controllers\MahasiswaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -119,3 +120,14 @@ Route::get('/database-buku/view/{id}',[BukuController::class,'view']);
 
 // cari buku
 Route::get('/database-buku/cari',[BukuController::class,'cari']);
+
+// Route untuk EAS
+// halaman utama database mahasiswa
+Route::get('/mahasiswa', [MahasiswaController::class,'index']);
+
+// edit data mahasiswa
+Route::get('/mahasiswa/edit/{id}',[MahasiswaController::class,'edit']);
+Route::post('/mahasiswa/update',[MahasiswaController::class,'update']);
+
+// view mahasiswa
+Route::get('/mahasiswa/view/{id}',[MahasiswaController::class,'view']);

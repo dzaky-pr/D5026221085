@@ -19,10 +19,7 @@
             <!-- Links -->
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link 1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link 2</a>
+                    <a class="nav-link" href="/mahasiswa">Mahasiswa</a>
                 </li>
 
                 <!-- Dropdown -->
@@ -34,6 +31,7 @@
                         <a class="dropdown-item" href="/pegawai">Pegawai</a>
                         <a class="dropdown-item" href="/nilaikuliah">Nilai Kuliah</a>
                         <a class="dropdown-item" href="/database-buku">Buku</a>
+                        <a class="dropdown-item" href="/mahasiswa">Mahasiswa</a>
                     </div>
                 </li>
             </ul>
